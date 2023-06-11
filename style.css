@@ -1,0 +1,266 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400&display=swap');
+
+* {
+  font-family: 'Poppins', sans-serif;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  border-radius: 15px;
+}
+
+body {
+  background-image: url(img/bg.png);
+  background-repeat: repeat;
+  background-size: cover;
+  font-size: 20px;
+}
+
+img {
+  margin-top: 30px;
+  width: 200px;
+  height: 200px;
+}
+
+a {
+  text-decoration: none;
+}
+
+.mt-3 {
+  margin-top: 10px;
+}
+
+.d-none {
+  display: none !important;
+}
+
+.title {
+  font-size: 45px;
+  margin: 60px 0 30px 0;
+  color: #fff;
+  text-shadow: 2px 2px 4px #000000;
+}
+
+.container {
+  padding: 20px;
+  margin: auto;
+  width: 30%;
+  border: 2px solid #fff;
+  background-color: #7b7b7b;
+  color: #fff;
+  /* display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column; */
+}
+
+.button-parent {
+  margin: 30px auto 20px auto;
+  display: flex;
+  font-size: 20px;
+}
+
+.btn {
+  display: inline-block;
+  text-align: center;
+  line-height: 40px;
+  width: 100px;
+  height: 40px;
+  margin: auto;
+  border: 2px solid #fff;
+  color: #fff;
+  background-color: #7b7b7b;
+  cursor: pointer;
+}
+
+.btnLink {
+  display: inline-block;
+  text-align: center;
+  line-height: 40px;
+  width: 100px;
+  height: 40px;
+  margin: auto;
+  border: 2px solid #ffffff;
+  color: #fff;
+  background-color: #7b7b7b;
+  cursor: pointer;
+  padding: 7px;
+}
+
+.btn:hover {
+  border: 2px solid #ffb438;
+  color: #fff;
+  background-color: #ffb438;
+}
+
+.btnNo:hover {
+  border: 2px solid #ffb438;
+  color: #fff;
+  background-color: #ffb438;
+}
+.btnYes:hover {
+  border: 2px solid #ffb438;
+  color: #fff;
+  background-color: #ffb438;
+}
+
+.btnLink:hover {
+  border: 2px solid #ffb438;
+  color: #fff;
+  background-color: #ffb438;
+}
+
+.card {
+  width: 20%;
+  border: 2px solid #ffffff;
+  background-color: #7b7b7b;
+  color: #fff;
+  margin: auto;
+  overflow: hidden;
+  padding: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: opacity .3s ease-out;
+  opacity: 0;
+  height: 0;
+  overflow: hidden;
+  z-index: -9;
+  }
+  
+.card.active {
+  z-index: 3;
+  opacity: 1;
+  height: auto;
+}
+
+/* .card.closed {
+  height: 0;
+  opacity: 0;
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
+} */
+
+.card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.card-close-button {
+  font-size: 30px;
+  margin-right: 16px;
+  margin-top: 6px;
+  cursor: pointer;
+
+}
+
+.card-close-button:hover {
+  transform: scale(1.2);
+}
+
+.card-view-button {
+  font-size: 15px;
+  color: #fff;
+  text-decoration: underline;
+  font-weight: 500;
+  display: inline-block;
+}
+
+.card-view-button:hover {
+  font-weight: bold;
+  /* transform: scale(1.1); */
+  cursor: pointer;
+}
+
+
+.card-close-button:after{
+  display: inline-block;
+  content: "\00d7"; /* This will render the 'X' */
+}
+
+.card-line:after{
+  border-right: 1px solid #fff;
+  content: '';
+}
+
+.card-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.card-content span {
+  display: block;
+  margin-bottom: 4px;
+  text-align: left;
+}
+
+.card-content span:before {
+  content: "-";
+  margin-right: 4px;
+}
+
+@media only screen and (max-width: 480px) {
+  /* For mobile phones: */
+  body {
+    background-image: url(img/bg.png);
+    background-repeat: repeat;
+    background-size: auto 812px;
+    font-size: 20px;
+  }
+
+  .container {
+    padding: 20px;
+    margin: auto;
+    width: 60%;
+  }
+
+  .card {
+    width: 50%;
+  }
+  .card-line:after{
+   margin-right: 30px;
+    border-right: 1px solid #000;
+    content: '';
+  }
+}
+
+@media only screen and (max-width: 812px) {
+  /* For mobile phones: */
+  body {
+    background-image: url(img/bg.png);
+    background-repeat: repeat;
+    background-size: auto 812px;
+    font-size: 20px;
+  }
+
+  .container {
+    padding: 20px;
+    margin: auto;
+    width: 60%;
+  }
+
+  .card {
+    width: 40%;
+  }
+  .card-line:after{
+   margin-right: 10px;
+    border-right: 1px solid #000;
+    content: '';
+  }
+}
+
+
+.pointer {
+  cursor: pointer;
+}
+
+.d-none {
+  display: none;
+}
+
+.d-block {
+  display: block;
+}

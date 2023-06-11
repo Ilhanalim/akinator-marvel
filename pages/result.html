@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style.css">
+    <link rel="icon" href="icon.png" type="image/x-icon">
+    <title>Akinator - Marvel</title>
+    <script src="../script.js"></script>
+
+</head>
+
+<body>
+
+    <h1 class="title">Akinator Marvel</h1>
+
+    <div class="container">
+        <div class="screen">
+            <div class="d-flex">
+                <h3>You must think of <span class="result-name"></span></h3>
+            </div>
+
+            <div>
+                <img src="" alt="" class="result-img">
+            </div>
+
+            <div class="button-parent">
+                <a href="../index.html" class="btnLink"><b>Try Again</b></a>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+
+<script>
+    // result
+    let resultName = document.querySelector('.result-name');
+    let resultImg = document.querySelector('.result-img');
+
+    let name = sessionStorage.getItem('resultName');
+    let img = sessionStorage.getItem('resultImg');
+
+    resultName.innerText = name;
+    resultImg.src = `../img/${img}.jpg`;
+</script>
+
+</html>

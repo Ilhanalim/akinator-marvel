@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="icon.png" type="image/x-icon">
+    <title>Akinator - Marvel</title>
+</head>
+
+<body>
+
+    <h1 class="title">Akinator Marvel</h1>
+
+    <div class="container">
+        <div class="screen">
+            <p class="sub-title">Think of one marvel superhero</p>
+            <div class="mt-3">
+                <p class="number">Question <span class="number-count">1</span></p>
+                <h3 class="question mt-3">Question</h3>
+            </div>
+
+            <div class="button-parent">
+                <button class="btn btnYes" data-val="y"><b>Yes</b></button>
+                <button class="btn btnNo" data-val="n"><b>No</b></button>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-header">
+                <div class="card-title">Available characters</div>
+                <div class="card-line"></div>
+                <div class="card-close-button"></div>
+            </div>
+            <hr>
+            <div class="card-content">
+            </div>
+        </div>
+
+        <a class="card-view-button">view available characters</a>
+    </div>
+
+    <script src="database.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
