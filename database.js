@@ -64,7 +64,7 @@ const database = [
     technology: false,
     fly: false,
     shield: false,
-    spy: false,
+    spy: true,
     green: false,
     hammer: false,
     wakanda: false,
